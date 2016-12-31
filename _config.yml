@@ -40,7 +40,8 @@ lines: # You can add HTML Tags in the Text
   - text: "<div class='typed-hello'>Hello, I'm Tao</div>SOFTWARE DEVELOPER - TENNIS LOVER"
   #- text: "SOFTWARE DEVELOPER - TENNIS LOVER"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/logo.png"
+favicon: "/img/logo.png"
 
 
 # Sections shown in the index page
