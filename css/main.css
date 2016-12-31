@@ -1,6 +1,7 @@
 .typed-container{
     height: 250px;
 }
+
 .typed-hello{
     font-family: "Source Sans Pro",sans-serif;
     font-size: 70px;
@@ -9,5 +10,10 @@
 
 .intro-text {
     height: 300px;
+}
+
+.img-me {
+    width: 200px;
+    height: 200px;
 }
 
