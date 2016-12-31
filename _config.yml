@@ -26,10 +26,26 @@ url: "http://taomanhdung.com" # the base hostname & protocol for your site, e.g.
 twitter_username: jekyllrb
 github_username:  taomanhdung
 
+##############################
+# Dynamic Text on the Header #
+##############################
+
+dynamic-typing: True
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 100
+start-delay: 200
+delete-delay: 10000
+lines: # You can add HTML Tags in the Text
+  - text: "Hello, I'm Tao<br>SOFTWARE DEVELOPER - TENNIS LOVER"
+  #- text: "SOFTWARE DEVELOPER - TENNIS LOVER"
+
+me-img: "/img/jetpacktocat.png"
+
 
 # Sections shown in the index page
 pages_list:
-  About: 'about'
+  About me: 'aboutme'
   Download: 'download'
   Contact: 'contact'
 

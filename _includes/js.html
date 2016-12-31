@@ -7,10 +7,31 @@
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-<!-- Theme JavaScript -->
-<!--<script src="js/grayscale.min.js"></script>-->
+<!-- typed JavaScript -->
+{% if site.dynamic-typing and page.section-type == "index" %}
+<script type="text/javascript" src="js/typed.min.js"></script>
+<script>
+    var myQuotes = new Array();
+    {% for line in site.lines %}
+         myQuotes.push("{{ line.text }}")
+    {% endfor %}
+
+    $(".intro-text").typed({
+       strings: myQuotes,
+        typeSpeed: {{ site.type-speed }},
+        backDelay: {{ site.delete-delay }},
+        startDelay: {{ site.start-delay }},
+        loop: {{ site.loop }},
+        loopCount: {{ site.loop-count }},
+        cursorChar: "|"
+    });
+</script>
+{% endif %}
+
+
 
 <script>
+
     // jQuery to collapse the navbar on scroll
     function collapseNavbar() {
         if ($(".navbar").offset().top > 50) {
