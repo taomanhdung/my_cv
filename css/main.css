@@ -127,6 +127,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     padding-top: 50px;
 }
 
+.p-b-50{
+    padding-bottom: 50px;
+}
+
 .cv_pdf{
     font-style: italic;
 }

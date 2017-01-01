@@ -1,5 +1,5 @@
 projects_list:
-  - id: pet-project
+  - id: pet-projects
     name: Pet Projects
     description:
     details:
@@ -8,4 +8,28 @@ projects_list:
         description: Online marketing
         avatar: img/projects/dodaxin.png
         avatar_alt: đồ da xịn
+  - id: company-projects
+    name: Company Projects
+    Description:
+    details:
+  - id: others
+    name: Others
+    description:
+    details:
+      - link:
+        name: Play Tennis
+        description: by Dung tao
+        avatar: img/projects/play_tennis.jpg
+        avatar_alt: Play tennis
+      - link:
+        name: Play Guitar
+        description: by Dung tao
+        avatar: img/projects/play_guitar.jpg
+        avatar_alt: Play Guitar
+      - link:
+        name: Drive A Car
+        description: by Dung tao
+        avatar: img/projects/drive_car.jpg
+        avatar_alt: Drive a car
+
 
