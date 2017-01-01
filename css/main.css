@@ -46,6 +46,14 @@ body{
 }
 
 
+.section--contact {
+    background-image: url("../img/word_map.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+}
+
+
 .section-title{
     color: rgba(0, 0, 0, 0.8);
 }
@@ -123,6 +131,12 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     border-top: 1px solid #eee;
 }
 
+.bg-white {
+    background: #fff none repeat scroll 0 0;
+}
+
+
+
 .p-t-50{
     padding-top: 50px;
 }
@@ -134,3 +148,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 .cv_pdf{
     font-style: italic;
 }
+
+.m-t-sm{
+    margin-top: 10px;
+}
+
