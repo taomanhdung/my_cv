@@ -41,6 +41,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- cube-portfolio CSS -->
+    <link rel="stylesheet" href="plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
+
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation -->
@@ -238,7 +242,6 @@
         </div>
         <p class="cv_pdf text-center">For more information, please view <a href="/cv/TaoManhDung.pdf" target="_blank">my CV</a></p>
 
-
     </div>
 
 </section>
@@ -266,17 +269,54 @@
     
         
             <!-- Download Section -->
-<section id="projects" class="bg-grey content-section text-center">
-    <div class="download-section">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Download Grayscale</h2>
-                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+<section id="projects" class="bg-grey content--projects">
+    <div class="container content-section">
+        <div class="section-title text-center">
+            <h2>What I've Done</h2>
+        </div>
+        <div class="cube-portfolio">
+            
+            <div id="filters-container" class="cbp-l-filters-button text-center">
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All </div>
+                
+                    <div data-filter=".pet-project" class="cbp-filter-item"> Pet Projects </div>
+                
+            </div><!--/end Filters Container-->
+
+            <div id="grid-container" class="cbp-l-grid-gallery">
+                
+                    
+                        
+                            <div class="cbp-item pet-project">
+                                <a href="ajax/dodaxin.html" class="cbp-caption cbp-singlePageInline"
+                                   data-title="Đồ da xịn<br>Online marketing">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <img src="img/projects/dodaxin.png" alt="đồ da xịn">
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignLeft">
+                                            <div class="cbp-l-caption-body">
+                                                <div class="cbp-l-caption-title">Đồ da xịn</div>
+                                                <div class="cbp-l-caption-desc">Online marketing</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        
+                    
+                
+
+            </div>
+
+            <div class="cbp-l-loadMore-button">
+                <a href="assets/ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
             </div>
         </div>
     </div>
+
 </section>
+
         
     
         
@@ -364,6 +404,9 @@
 </script>
 
 
+
+<script src="plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
 
 
 <script>

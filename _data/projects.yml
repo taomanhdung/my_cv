@@ -1,0 +1,11 @@
+projects_list:
+  - id: pet-project
+    name: Pet Projects
+    description:
+    details:
+      - link: ajax/dodaxin.html
+        name: Đồ da xịn
+        description: Online marketing
+        avatar: img/projects/dodaxin.png
+        avatar_alt: đồ da xịn
+

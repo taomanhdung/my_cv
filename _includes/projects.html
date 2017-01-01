@@ -1,12 +1,48 @@
 <!-- Download Section -->
-<section id="projects" class="bg-grey content-section text-center">
-    <div class="download-section">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Download Grayscale</h2>
-                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+<section id="projects" class="bg-grey content--projects">
+    <div class="container content-section">
+        <div class="section-title text-center">
+            <h2>What I've Done</h2>
+        </div>
+        <div class="cube-portfolio">
+            {% assign projects = site.data.projects %}
+            <div id="filters-container" class="cbp-l-filters-button text-center">
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All </div>
+                {% for pro in projects.projects_list %}
+                    <div data-filter=".{{ pro.id }}" class="cbp-filter-item"> {{ pro.name }} </div>
+                {% endfor %}
+            </div><!--/end Filters Container-->
+
+            <div id="grid-container" class="cbp-l-grid-gallery">
+                {% for pro in projects.projects_list %}
+                    {% if pro.details %}
+                        {% for item in pro.details %}
+                            <div class="cbp-item {{pro.id}}">
+                                <a href="{{ item.link }}" class="cbp-caption cbp-singlePageInline"
+                                   data-title="{{ item.name }}<br>{{ item.description }}">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <img src="{{ item.avatar }}" alt="{{ item.avatar_alt }}">
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignLeft">
+                                            <div class="cbp-l-caption-body">
+                                                <div class="cbp-l-caption-title">{{ item.name }}</div>
+                                                <div class="cbp-l-caption-desc">{{ item.description }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+
+            <div class="cbp-l-loadMore-button">
+                <a href="assets/ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
             </div>
         </div>
     </div>
+
 </section>
