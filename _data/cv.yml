@@ -1,0 +1,38 @@
+works:
+  - company: Digitel co,.ltd
+    position: Leader of code team
+    time: Arg 2013-present
+  - company: Fisoft co,.ltd
+    position: Senior software engine
+    time: Jan 2012 - Arg 2012
+  - company: NIIT
+    position: College, Software Engineering
+    time: 2009 - 2012
+
+skills:
+  - type: Computer skills
+    description:
+    details:
+      - name: Languages known
+        description: PHP, Java, Asterisk, Openfire, HTML5, CSS3, Javascript, Nodejs, Bootstrap...
+      - name: Database
+        description: Sql server, Mysql
+      - name: OS
+        description: MacOS, Linux, Windows
+      - name: Tools
+        description: PhpStorm, Netbeans, PhpDesigner, Subline Text, Photoshop...
+      - name: Patterns and Techniques
+        description: Codeigniter, Iceface, OOP, MVC, Webservice, Performance Optimisation Techniques...
+      - name: Others
+        description: Jekyll, Git, SASS, WebRTC, VOIP IP,..
+  - type: Languages skills
+    description:
+    details:
+      - name: English
+        description: Toeic (600)
+      - name: Vietnamese
+        description: Native
+  - type: Soft skills
+    description: Communication, Teamwork, Presentation...
+
+

@@ -16,12 +16,68 @@
                         I develop modern, highly interactive, responsive websites & web apps with cutting-edge technologies.
                         I love learning new things, making new friends, driving a car and playing tennis.
                         Let's get to know each other, drop me a line: <a title="email" href="mailto:taomanhdung@gmail.com?Subject=Hello%20Tao" target="_blank">taomanhdung@gmail.com</a> or via Skype: taomanhdungit</p>
+
+                        <ul class="list-inline social-buttons">
+                            {% for network in site.social %}
+                                <li><a title="{{network.title}}" href="{{ network.url }}" class="fa fa-{{ network.title }} fa-fw" target="_blank"></a></li>
+                            {% endfor %}
+
+                        </ul>
+
                     </div>
                 </div>
             </div>
 
-
         </div>
+
+        <div class="row p-t-50">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    {% assign cv = site.data.cv %}
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="about-block ">
+                            <h3 class="text-center">Working Experience</h3>
+                            <ul class="timeline">
+                                {% for work in cv.works %}
+                                <li class="row">
+                                    <div class="col-xs-6 year">
+                                        {{ work.time }}
+                                    </div>
+                                    <div class="col-xs-6 box-content">
+                                        <b>{{ work.company }}</b>
+                                        <br/>{{ work.position }}
+                                    </div>
+
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="about-block">
+                            <h3 class="text-center">Skills and Techniques</h3>
+                            {% for skill in cv.skills %}
+                                <h4>{{ skill.type }}</h4>
+                                {% if skill.description %}
+                                    <p>{{ skill.description }}</p>
+                                {% endif %}
+                                {% if skill.details %}
+                                    <ul class="skills">
+                                    {% for detail in skill.details %}
+                                        <li><b>{{ detail.name }}</b>: {{ detail.description }}</li>
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                <br/>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="cv_pdf text-center">For more information, please view <a href="/cv/TaoManhDung.pdf" target="_blank">my CV</a></p>
+
+
     </div>
 
 </section>

@@ -6,6 +6,10 @@ body{
     padding-top: 100px;
 }
 
+.container p{
+    font-size: 18px;
+}
+
 .intro{
     background: #000 url("../img/intro_bg_1.jpg") no-repeat scroll center / cover;
 }
@@ -25,8 +29,7 @@ body{
 }
 
 .img-me {
-   width: 90%;
-    height:90%;
+   width: 100%;
 }
 
 
@@ -48,4 +51,82 @@ body{
 }
 .section-title h2{
     text-transform: none;
+}
+
+.about-block{
+    font-size: 16px;
+}
+
+.about-block ul{
+    padding: 0;
+    margin: 0;
+}
+
+.about-block .timeline li{
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.about-block h3, h4{
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: none;
+}
+
+.about-block h4{
+    margin-bottom: 5px;
+}
+
+
+.about-block .year {
+    padding: 0 20px 0 0;
+    text-align: right;
+    font-weight: bold;
+}
+.about-block .box-content {
+    padding: 0 0 0 20px;
+    border-left: 2px solid #ddd;
+}
+
+.about-block ul.skills{
+    padding-left: 50px;
+}
+
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #00cdff;
+    border: 1px solid #00cdff;
+    color: #000;
+    outline: 0 none;
+}
+ul.social-buttons li a {
+    background-color: #fff;
+    border-radius: 100%;
+    color: #000;
+    display: block;
+    font-size: 40px;
+    height: 40px;
+    line-height: 40px;
+    outline: 0 none;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+    background-color: #fff;
+    color: #000;
+}
+
+.bg-grey {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.p-t-50{
+    padding-top: 50px;
+}
+
+.cv_pdf{
+    font-style: italic;
 }

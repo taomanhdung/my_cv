@@ -43,6 +43,18 @@ lines: # You can add HTML Tags in the Text
 me-img: "/img/my_avatar.jpg"
 favicon: "/img/logo.png"
 
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "facebook"
+    url: "https://facebook.com/manhdung.niit"
+  - title: "twitter"
+    url: "https://twitter.com/taomanhdung"
+  - title: "github"
+    url: "https://github.com//taomanhdung"
+
 
 # Sections shown in the index page
 pages_list:
