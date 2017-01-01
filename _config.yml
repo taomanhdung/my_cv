@@ -40,7 +40,7 @@ lines: # You can add HTML Tags in the Text
   - text: "<div class='typed-hello'>Hello, I'm Tao</div>SOFTWARE DEVELOPER - TENNIS LOVER"
   #- text: "SOFTWARE DEVELOPER - TENNIS LOVER"
 
-me-img: "/img/logo.png"
+me-img: "/img/my_avatar.jpg"
 favicon: "/img/logo.png"
 
 

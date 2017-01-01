@@ -1,3 +1,10 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.content-section{
+    padding-top: 100px;
+}
 
 .intro{
     background: #000 url("../img/intro_bg_1.jpg") no-repeat scroll center / cover;
@@ -18,7 +25,27 @@
 }
 
 .img-me {
-    width: 200px;
-    height: 200px;
+   width: 90%;
+    height:90%;
 }
 
+
+.section--aboutme{
+    width: 100%;
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.section--projects{
+    width: 100%;
+    background: #fff none repeat scroll 0 0;
+}
+
+
+.section-title{
+    color: rgba(0, 0, 0, 0.8);
+}
+.section-title h2{
+    text-transform: none;
+}
