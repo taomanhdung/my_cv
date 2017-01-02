@@ -7,12 +7,7 @@ body{
 }
 
 footer{
-    background: #2e6da4 none repeat scroll 0 0;
-    padding: 10px 0;
-}
 
-a{
-    color: #2e6da4;
 }
 
 .content-section{
@@ -63,11 +58,8 @@ a{
     background-image: url("../img/word_map.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background: #fff none repeat scroll 0 0;
-    color: #000;
+    margin-top: 60px;
 }
-
-
 
 
 .section-title{
@@ -127,7 +119,7 @@ a{
 ul.social-buttons li a {
     background-color: #fff;
     border-radius: 100%;
-    /*color: #000;*/
+    color: #000;
     display: block;
     font-size: 40px;
     height: 40px;
@@ -167,7 +159,5 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .m-t-sm{
     margin-top: 10px;
-    font-style: italic;
-    color: #aeaeae;
 }
 
