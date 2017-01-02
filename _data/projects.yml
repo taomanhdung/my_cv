@@ -3,30 +3,40 @@ projects_list:
     name: Company Projects
     Description:
     details:
-      - link: ajax/crm_digitel.html
-        name: CRM System
-        description: by Digitel co,. Ltd
-        avatar: img/projects/crm_digitel.png
-        avatar_alt: CRM System
       - link: ajax/webcall.html
         name: Webcall system
         description: by Digitel co,. Ltd
         avatar: img/projects/webcall.png
         avatar_alt: Webcall system
-      - link: ajax/a2b_skypevietnam.html
-        name: A2billing system
-        description: by SkypeVietnam co,. Ltd
-        avatar: img/projects/a2billing_skypevietnam.png
-        avatar_alt: A2billing system
+      - link: ajax/crm_digitel.html
+        name: CRM System
+        description: by Digitel co,. Ltd
+        avatar: img/projects/crm_digitel.png
+        avatar_alt: CRM System
       - link: ajax/warehouse_system.html
         name: Warehouse system
         description: by Dung Tao
         avatar: img/projects/warehouse_system.png
         avatar_alt: Warehouse system
+      - link: ajax/a2b_skypevietnam.html
+        name: A2billing system
+        description: by SkypeVietnam co,. Ltd
+        avatar: img/projects/a2billing_skypevietnam.png
+        avatar_alt: A2billing system
+      - link: ajax/crm_garena.html
+        name: CRM for client
+        description: by Dung Tao
+        avatar: img/projects/crm_garena.png
+        avatar_alt: CRM for client
   - id: pet-projects
     name: Pet Projects
     description:
     details:
+      - link: ajax/mypham.html
+        name: Mỹ phẩm
+        description: Online shopping
+        avatar: img/projects/mypham.png
+        avatar_alt: Mỹ phẩm
       - link: ajax/dodaxin.html
         name: Đồ da xịn
         description: Online marketing
