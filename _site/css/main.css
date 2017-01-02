@@ -2,17 +2,17 @@ body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.navbar-custom.top-nav-collapse {
+    background: #2e6da4 none repeat scroll 0 0;
+}
+
 footer{
     background: #2e6da4 none repeat scroll 0 0;
     padding: 10px 0;
 }
 
-a {
-   color: #337ab7; 
-}
-
-.navbar-custom.top-nav-collapse {
-    background: #2e6da4 none repeat scroll 0 0;
+a{
+    color: #2e6da4;
 }
 
 .content-section{
@@ -58,17 +58,16 @@ a {
     background: #fff none repeat scroll 0 0;
 }
 
+
 .section--contact {
-    background: #fff none repeat scroll 0 0;
     background-image: url("../img/word_map.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background: #fff none repeat scroll 0 0;
     color: #000;
 }
 
-.section--contact h2 {
-    text-transform: none;
-}
+
 
 
 .section-title{
@@ -148,7 +147,9 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     border-top: 1px solid #eee;
 }
 
-
+.bg-white {
+    background: #fff none repeat scroll 0 0;
+}
 
 
 
@@ -166,75 +167,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .m-t-sm{
     margin-top: 10px;
+    font-style: italic;
+    color: #aeaeae;
 }
 
-.white{
-    color: #fff;
-}
-
-.heart-beating{
-    animation: 0.5s ease 0s alternate none infinite running scale_font;
-    display: inline-block;
-    width: 1rem;
-}
-
-@mixin transition($speed, $prop:all, $ease:ease-in) {
-    -webkit-transition: $prop $speed $ease;
-    -moz-transition: $prop $speed $ease;
-    -ms-transition: $prop $speed $ease;
-    -o-transition: $prop $speed $ease;
-    transition: $prop $speed $ease;
-}
-
-.animate {
-    transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animate-opacity {
-    transition: opacity 1s ease;
-}
-.animate-color {
-    transition: color 0.5s ease;
-}
-
-
-.scaleIn {
-    transform: scale(0);
-}
-
-
-@mixin animation_blink() {
-    opacity: 1;
-    animation: blink 0.7s infinite;
-}
-
-@mixin animation_move() {
-    bottom: 40px;
-    animation: move 0.5s infinite alternate;
-}
-
-@mixin animation_scale_font() {
-    animation: scale_font 0.5s infinite alternate;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes move {
-    from { bottom: 40px; }
-    to   { bottom: 20px; }
-}
-
-@keyframes scale_font {
-    from { font-size: 0.75rem; }
-    to   { font-size: 1rem }
-}
