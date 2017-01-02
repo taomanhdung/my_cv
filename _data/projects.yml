@@ -51,12 +51,12 @@ projects_list:
         description: by Dung tao
         avatar: img/projects/play_tennis.jpg
         avatar_alt: Play tennis
-      - link:
+      - link: ajax/play_guitar.html
         name: Play Guitar
         description: by Dung tao
         avatar: img/projects/play_guitar.jpg
         avatar_alt: Play Guitar
-      - link:
+      - link: ajax/drive_car.html
         name: Drive A Car
         description: by Dung tao
         avatar: img/projects/drive_car.jpg
