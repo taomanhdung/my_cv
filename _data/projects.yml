@@ -13,21 +13,21 @@ projects_list:
         description: by Digitel co,. Ltd
         avatar: img/projects/crm_digitel.png
         avatar_alt: CRM System
-      - link: ajax/warehouse_system.html
-        name: Warehouse system
-        description: by Dung Tao
-        avatar: img/projects/warehouse_system.png
-        avatar_alt: Warehouse system
-      - link: ajax/a2b_skypevietnam.html
-        name: A2billing system
-        description: by SkypeVietnam co,. Ltd
-        avatar: img/projects/a2billing_skypevietnam.png
-        avatar_alt: A2billing system
       - link: ajax/crm_garena.html
         name: CRM for client
         description: by Dung Tao
         avatar: img/projects/crm_garena.png
         avatar_alt: CRM for client
+      - link: ajax/a2b_skypevietnam.html
+        name: A2billing system
+        description: by SkypeVietnam co,. Ltd
+        avatar: img/projects/a2billing_skypevietnam.png
+        avatar_alt: A2billing system
+      - link: ajax/warehouse_system.html
+        name: Warehouse system
+        description: by Dung Tao
+        avatar: img/projects/warehouse_system.png
+        avatar_alt: Warehouse system  
   - id: pet-projects
     name: Pet Projects
     description:
