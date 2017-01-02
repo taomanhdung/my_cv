@@ -1,4 +1,23 @@
 projects_list:
+  - id: company-projects
+    name: Company Projects
+    Description:
+    details:
+      - link: ajax/webcall.html
+        name: Webcall system
+        description: by Digitel co,. Ltd
+        avatar: img/projects/webcall.png
+        avatar_alt: Webcall system
+      - link: ajax/crm_digitel.html
+        name: CRM System
+        description: by Digitel co,. Ltd
+        avatar: img/projects/crm_digitel.png
+        avatar_alt: CRM System
+      - link: ajax/a2b_skypevietnam.html
+        name: A2billing system
+        description: by SkypeVietnam co,. Ltd
+        avatar: img/projects/a2billing_skypevietnam.png
+        avatar_alt: A2billing system
   - id: pet-projects
     name: Pet Projects
     description:
@@ -8,10 +27,6 @@ projects_list:
         description: Online marketing
         avatar: img/projects/dodaxin.png
         avatar_alt: đồ da xịn
-  - id: company-projects
-    name: Company Projects
-    Description:
-    details:
   - id: others
     name: Others
     description:
