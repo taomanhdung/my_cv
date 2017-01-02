@@ -3,16 +3,16 @@ projects_list:
     name: Company Projects
     Description:
     details:
-      - link: ajax/webcall.html
-        name: Webcall system
-        description: by Digitel co,. Ltd
-        avatar: img/projects/webcall.png
-        avatar_alt: Webcall system
       - link: ajax/crm_digitel.html
         name: CRM System
         description: by Digitel co,. Ltd
         avatar: img/projects/crm_digitel.png
         avatar_alt: CRM System
+      - link: ajax/webcall.html
+        name: Webcall system
+        description: by Digitel co,. Ltd
+        avatar: img/projects/webcall.png
+        avatar_alt: Webcall system
       - link: ajax/a2b_skypevietnam.html
         name: A2billing system
         description: by SkypeVietnam co,. Ltd
