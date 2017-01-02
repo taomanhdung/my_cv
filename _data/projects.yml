@@ -27,11 +27,16 @@ projects_list:
         name: Warehouse system
         description: by Dung Tao
         avatar: img/projects/warehouse_system.png
-        avatar_alt: Warehouse system  
+        avatar_alt: Warehouse system
   - id: pet-projects
     name: Pet Projects
     description:
     details:
+      - link: ajax/my_web_profile.html
+        name: My website profile
+        description: CV Online
+        avatar: img/projects/my_web_profile.png
+        avatar_alt: CV Tao Manh Dung
       - link: ajax/mypham.html
         name: Mỹ phẩm
         description: Online shopping
