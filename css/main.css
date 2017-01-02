@@ -63,7 +63,7 @@ a{
     background-image: url("../img/word_map.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background: #fff none repeat scroll 0 0;
+    background-color: #fff;
     color: #000;
 }
 
@@ -125,7 +125,7 @@ a{
 ul.social-buttons li a {
     background-color: #fff;
     border-radius: 100%;
-    color: #000;
+    /*color: #000;*/
     display: block;
     font-size: 40px;
     height: 40px;
@@ -165,5 +165,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .m-t-sm{
     margin-top: 10px;
+    font-style: italic;
+    color: #aeaeae;
 }
 
