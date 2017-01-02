@@ -6,6 +6,11 @@ body{
     background: #2e6da4 none repeat scroll 0 0;
 }
 
+footer{
+    background: #2e6da4 none repeat scroll 0 0;
+    padding: 10px 0;
+}
+
 .content-section{
     padding-top: 100px;
 }
@@ -54,7 +59,7 @@ body{
     background-image: url("../img/word_map.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    margin-top: 60px;
+    background: #fff none repeat scroll 0 0;
 }
 
 
