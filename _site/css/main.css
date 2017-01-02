@@ -6,6 +6,12 @@ body{
     background: #2e6da4 none repeat scroll 0 0;
 }
 
+@media (min-width: 768px) {
+    .navbar-custom.top-nav-collapse {
+        background: #2e6da4 none repeat scroll 0 0;
+    }
+}
+
 footer{
     background: #2e6da4 none repeat scroll 0 0;
     padding: 10px 0;
