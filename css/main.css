@@ -11,6 +11,10 @@ footer{
     padding: 10px 0;
 }
 
+a{
+    color: #2e6da4;
+}
+
 .content-section{
     padding-top: 100px;
 }
@@ -60,6 +64,7 @@ footer{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background: #fff none repeat scroll 0 0;
+    color: #000;
 }
 
 
