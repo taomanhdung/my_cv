@@ -2,6 +2,10 @@ body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.navbar-custom.top-nav-collapse {
+    background: #2e6da4 none repeat scroll 0 0;
+}
+
 .content-section{
     padding-top: 100px;
 }
