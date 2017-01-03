@@ -1,5 +1,5 @@
 <!-- jQuery -->
-<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -27,14 +27,9 @@
     });
 </script>
 {% endif %}
-
-
 <script src="plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
-
-
+<script src="js/plugins/cube-portfolio/cube-portfolio-lightbox.min.js"></script>
 <script>
-
     // jQuery to collapse the navbar on scroll
     function collapseNavbar() {
         if ($(".navbar").offset().top > 50) {
@@ -43,10 +38,8 @@
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
         }
     }
-
     $(window).scroll(collapseNavbar);
     $(document).ready(collapseNavbar);
-
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
         $('a.page-scroll').bind('click', function(event) {
@@ -57,7 +50,6 @@
             event.preventDefault();
         });
     });
-
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $(this).closest('.collapse').collapse('toggle');
