@@ -62,6 +62,9 @@ pages_list:
   Projects: 'projects'
   Contact: 'contact'
 
+sass:
+    style: compressed
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -71,3 +74,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
 port: 8888
+
+
