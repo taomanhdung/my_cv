@@ -22,7 +22,7 @@ email: taomanhdung@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   CV - Tao Manh Dung
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://taomanhdung.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://taomanhdung.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  taomanhdung
 
@@ -76,3 +76,4 @@ exclude:
 port: 8888
 
 
+enforce_ssl: taomanhdung.com
