@@ -9,12 +9,6 @@ body{
 }
 
 
-@media (max-width: 768px) {
-    .navbar-custom, body{
-        background-color: #2e6da4;
-    }
-}
-
 footer{
     background: #2e6da4 none repeat scroll 0 0;
     padding: 10px 0;
@@ -33,21 +27,24 @@ a{
 }
 
 .intro{
-    background: #000 url("../img/intro_bg_1.jpg") no-repeat scroll center / cover;
+    background: #000 url("../img/my_intro.jpg") no-repeat scroll center / cover;
 }
 
 .typed-container{
-    height: 250px;
+    height: 280px;
 }
 
 .typed-hello{
     font-family: "Source Sans Pro",sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .intro-text {
-    height: 300px;
+    height: 350px;
+}
+.intro .intro-body .intro-text {
+    font-size: 18px;
 }
 
 .img-me {
@@ -185,3 +182,21 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     cursor: default;
 }
 
+@media (max-width: 768px) {
+    .navbar-custom, body{
+        background-color: #2e6da4;
+    }
+    .typed-container{
+        height: 200px !important;
+    }
+
+    .typed-hello{
+        font-size: 30px !important;
+    }
+    .intro .intro-body .intro-text {
+        font-size: 13px !important;;
+    }
+    .typed-cursor{
+        font-size: 15px;
+    }
+}
