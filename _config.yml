@@ -77,3 +77,4 @@ port: 8888
 
 
 enforce_ssl: taomanhdung.com
+force-https: true
