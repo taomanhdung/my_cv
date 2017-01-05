@@ -4,4 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: index
 section-type: index
+sitemap:
+  priority: 1.0
 ---

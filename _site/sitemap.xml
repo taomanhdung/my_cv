@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    
+    <url>
+        <loc>http://localhost:8888/jekyll/update/2016/12/18/welcome-to-jekyll.html</loc>
+        
+        <lastmod>2016-12-18T23:48:17+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.5</priority>
+        
+    </url>
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/aboutme.html</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/contact.html</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>1.0</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/css/main.css</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/projects.html</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/sitemap.xml</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/css/typed.css</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/assets/main.css</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/feed.xml</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/feed.xslt.xml</loc>
+        
+        <lastmod>2017-01-05T10:54:37+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+</urlset>
