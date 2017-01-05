@@ -5,5 +5,5 @@
 layout: index
 section-type: index
 sitemap:
-  priority: 1.0
+  
 ---
