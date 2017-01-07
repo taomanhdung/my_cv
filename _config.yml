@@ -60,6 +60,7 @@ social:
 pages_list:
   About me: 'aboutme'
   Projects: 'projects'
+#  Posts: 'posts'
   Contact: 'contact'
 
 sass:
@@ -79,11 +80,19 @@ port: 8888
 enforce_ssl: taomanhdung.com
 force-https: true
 
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+
 ################
 # Web app mode #
 ################
 
-web-app-mode: True
+web-app-mode: true
 
 # Icons for Web App mode
 
@@ -93,3 +102,4 @@ icon-72p: "/img/web-app/icon-72p.png"
 icon-96p: "/img/web-app/icon-96p.png"
 icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
+
