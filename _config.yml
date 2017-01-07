@@ -103,3 +103,10 @@ icon-96p: "/img/web-app/icon-96p.png"
 icon-144p: "/img/web-app/icon-144p.png"
 icon-192p: "/img/web-app/icon-192p.png"
 
+
+
+# http://jekyllrb.com/docs/permalinks/
+permalink: /:title/
+
+
+

@@ -3,7 +3,22 @@
     
     
     <url>
-        <loc>http://localhost:8888/jekyll/update/2016/12/18/welcome-to-jekyll.html</loc>
+        <loc>http://localhost:8888/learning-english/</loc>
+        
+        <lastmod>2017-01-06T23:48:17+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.5</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/welcome-to-jekyll/</loc>
         
         <lastmod>2016-12-18T23:48:17+07:00</lastmod>
         
@@ -19,9 +34,9 @@
     
     
     <url>
-        <loc>http://localhost:8888/aboutme.html</loc>
+        <loc>http://localhost:8888/aboutme/</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -34,9 +49,9 @@
     
     
     <url>
-        <loc>http://localhost:8888/contact.html</loc>
+        <loc>http://localhost:8888/contact/</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -51,7 +66,7 @@
     <url>
         <loc>http://localhost:8888/</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -66,7 +81,7 @@
     <url>
         <loc>http://localhost:8888/css/main.css</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -79,9 +94,24 @@
     
     
     <url>
-        <loc>http://localhost:8888/projects.html</loc>
+        <loc>http://localhost:8888/posts/</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
+        
+        
+        <changefreq>monthly</changefreq>
+        
+        
+        <priority>0.3</priority>
+        
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://localhost:8888/projects/</loc>
+        
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -98,7 +128,7 @@
     <url>
         <loc>http://localhost:8888/css/typed.css</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -113,7 +143,7 @@
     <url>
         <loc>http://localhost:8888/assets/main.css</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -128,7 +158,7 @@
     <url>
         <loc>http://localhost:8888/feed.xml</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
@@ -143,7 +173,7 @@
     <url>
         <loc>http://localhost:8888/feed.xslt.xml</loc>
         
-        <lastmod>2017-01-05T11:17:55+07:00</lastmod>
+        <lastmod>2017-01-07T23:55:41+07:00</lastmod>
         
         
         <changefreq>monthly</changefreq>
