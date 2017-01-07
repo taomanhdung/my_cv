@@ -84,8 +84,8 @@ force-https: true
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#2e6da4"
-apple-status-bar-style: "white"
+color-browser: "#ffffff"
+apple-status-bar-style: "#2e6da4"
 
 
 ################
