@@ -1,0 +1,29 @@
+<!-- Contact Section -->
+<section id="posts" class="section--post">
+    <div class="container content-section">
+        <div class="section-title text-center">
+            <h2>Latest Posts</h2>
+        </div>
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-sm-6">
+                <div class="grid-boxes">
+                    <div class="view view-tenth no-margin-bottom">
+                        <img class="img-responsive" src="{{ post.image.thumbnail }}" alt="{{ post.title }}" />
+                        <div class="mask">
+                            <h2>{{ post.title }}</h2>
+                            <p>{{ post.description }}</p>
+                            <a href="{{ post.url }}" class="info" title="{{ post.title }}">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid-boxes-caption">
+                        <h5>{{ post.title }}</h5>
+                        <p>{{ post.date | date_to_string }}</p>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

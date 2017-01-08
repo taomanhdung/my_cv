@@ -59,9 +59,18 @@ a{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.section--projects{
+.content--projects{
+    width: 100%;
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.section--post{
     width: 100%;
     background: #fff none repeat scroll 0 0;
+    color: #000;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 
@@ -69,7 +78,7 @@ a{
     background-image: url("../img/word_map.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #f7f7f7;
     color: #000;
 }
 
@@ -145,18 +154,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     color: #000;
 }
 
-.bg-grey {
-    background: #f7f7f7 none repeat scroll 0 0;
-    border-bottom: 1px solid #eee;
-    border-top: 1px solid #eee;
-}
-
-.bg-white {
-    background: #fff none repeat scroll 0 0;
-}
-
-
-
 .p-t-50{
     padding-top: 50px;
 }
@@ -181,6 +178,26 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     color: #fff;
     cursor: default;
 }
+
+.grid-boxes{
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.grid-boxes-caption{
+    padding: 10px;
+}
+
+.grid-boxes-caption h5{
+    margin-bottom: 5px;
+}
+.grid-boxes-caption p{
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 14px;
+    color: #777;
+}
+
 @media (max-width: 768px) {
     .navbar-custom, body{
         background-color: #2e6da4;

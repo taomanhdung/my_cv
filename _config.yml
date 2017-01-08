@@ -14,6 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+force-https: false
+enforce_ssl: taomanhdung.com
+
 lang: "en"
 title: Tao Manh Dung
 author: Tao Manh Dung
@@ -23,7 +26,7 @@ description: > # this means to ignore newlines until "baseurl:"
   CV - Tao Manh Dung
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://taomanhdung.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: taomanhdung
 github_username:  taomanhdung
 
 ##############################
@@ -60,7 +63,7 @@ social:
 pages_list:
   About me: 'aboutme'
   Projects: 'projects'
-#  Posts: 'posts'
+  Posts: 'posts'
   Contact: 'contact'
 
 sass:
@@ -75,11 +78,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 port: 8888
-
-
-enforce_ssl: taomanhdung.com
-force-https: true
-
 
 ##############################
 # Color the browser elements #
