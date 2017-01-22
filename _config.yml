@@ -44,7 +44,7 @@ lines: # You can add HTML Tags in the Text
   #- text: "SOFTWARE DEVELOPER - TENNIS LOVER"
 
 me-img: "/img/my_avatar.jpg"
-favicon: "/img/td.ico"
+favicon: "/img/favicon.ico"
 
 ##################
 # Social Buttons #
