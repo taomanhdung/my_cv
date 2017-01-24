@@ -112,5 +112,7 @@ assets:
     css: true
     js:  true
 
+  style: compressed
+
 
 
