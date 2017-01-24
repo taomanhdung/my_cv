@@ -107,4 +107,10 @@ icon-192p: "/img/web-app/td-192p.png"
 permalink: /:title/
 
 
+assets:
+  compress:
+    css: true
+    js:  true
+
+
 
