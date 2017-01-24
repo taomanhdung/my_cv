@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a16d36f-f022-422d-bb35-21cb45d85cef" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/img/projects/a2billing_skypevietnam_bak.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/a2billing_skypevietnam_bak.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/img/projects/a2billing_skypevietnam.png" afterPath="$PROJECT_DIR$/_site/img/projects/a2billing_skypevietnam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/img/projects/mypham.png" afterPath="$PROJECT_DIR$/_site/img/projects/mypham.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/a2billing_skypevietnam.png" afterPath="$PROJECT_DIR$/img/projects/a2billing_skypevietnam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/projects/mypham.png" afterPath="$PROJECT_DIR$/img/projects/mypham.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/Readme" afterPath="$PROJECT_DIR$/_site/Readme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sitemap.xml" afterPath="$PROJECT_DIR$/_site/sitemap.xml" />
     </list>
     <ignored path="my_cv.iws" />
     <ignored path=".idea/workspace.xml" />
