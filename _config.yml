@@ -77,6 +77,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - gulpfile.js
 port: 8888
 
 ##############################
@@ -103,6 +104,11 @@ icon-96p: "/img/web-app/app-td-96p.png"
 icon-144p: "/img/web-app/app-td-144p.png"
 icon-192p: "/img/web-app/app-td-192p.png"
 
+##################
+# Google analysis #
+##################
+
+google_analytics: UA-90841592-1
 
 
 # http://jekyllrb.com/docs/permalinks/

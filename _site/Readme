@@ -2,4 +2,10 @@
 
 * Browsersync (for live-server & for testing UI in multi-devices): https://browsersync.io/
 
-* sitemap: https://mijingo.com/blog/building-a-sitemap-with-jekyll
+* https://cdnjs.com (get file js on live server)
+
+* tips for SEO:
+- https://medium.com/@dimitrikoenig/scoring-100-on-googles-pagespeed-insights-with-jekyll-adcbbb229baf#.kfla6zmjt
+- https://steveedson.co.uk/gulp/advanced-tasks/
+- http://jekyll.tips/
+

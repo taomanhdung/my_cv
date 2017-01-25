@@ -6,6 +6,13 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+var jpegtran = require('imagemin-jpegtran');
+var gifsicle = require('imagemin-gifsicle');
+var minifyHTML = require('gulp-minify-html');
+var fs = require('fs');
+
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -50,6 +57,30 @@ gulp.task('minify-js', function() {
         }))
 });
 
+
+gulp.task('optimize-images', function () {
+    return gulp.src(['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png'])
+        .pipe(imagemin({
+            progressive: false,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant(), jpegtran(), gifsicle()]
+        }))
+        .pipe(gulp.dest('img/'));
+});
+
+gulp.task('optimize-html', function() {
+    return gulp.src('_site/**/*.html')
+        .pipe(minifyHTML({
+            quotes: true
+        }))
+        .pipe(replace(/<link href=\"\/css\/main.css\"[^>]*>/, function(s) {
+            var style = fs.readFileSync('_site/css/main.css', 'utf8');
+            return '<style>\n' + style + '\n</style>';
+        }))
+        .pipe(gulp.dest('_site/'));
+});
+
+
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
@@ -70,7 +101,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'optimize-images', 'optimize-html']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
