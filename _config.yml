@@ -82,8 +82,8 @@ port: 8888
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "yellow" #2e6da4
-apple-status-bar-style: "red"
+color-browser: "#2e6da4"
+apple-status-bar-style: "#2e6da4"
 
 
 ################
