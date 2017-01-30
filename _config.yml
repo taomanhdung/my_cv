@@ -77,7 +77,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - gulpfile.js
+#- gulpfile.js
 port: 8888
 
 ##############################
