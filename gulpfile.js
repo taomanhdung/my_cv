@@ -15,6 +15,7 @@ var fs = require('fs');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cache = require('gulp-cache');
+var parallel = require("concurrent-transform");
 
 
 // Set the banner content
@@ -79,13 +80,18 @@ gulp.task('minify-js', function() {
 gulp.task('optimize-images', function () {
     return gulp.src(['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png',
                     'img/*.jpg', 'img/*.jpeg', 'img/*.gif', 'img/*.png'])
-        .pipe(imagemin({
-            optimizationLevel: 5,
+        .pipe(parallel(imagemin({
             progressive: true,
-            interlaced: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant(), jpegtran(), gifsicle()]
-        }))
+            svgoPlugins: [{ removeViewBox: false }],
+            use: [pngquant()]
+        })))
+        // .pipe(imagemin({
+        //     optimizationLevel: 5,
+        //     progressive: true,
+        //     interlaced: true,
+        //     svgoPlugins: [{removeViewBox: false}],
+        //     use: [pngquant(), jpegtran(), gifsicle()]
+        // }))
         .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
         .pipe(gulp.dest('img/'));
 });
