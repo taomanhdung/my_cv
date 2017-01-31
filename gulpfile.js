@@ -77,7 +77,8 @@ gulp.task('minify-js', function() {
 
 
 gulp.task('optimize-images', function () {
-    return gulp.src(['img/*', 'img/**/*']) //['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png']
+    return gulp.src(['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png',
+                    'img/*.jpg', 'img/*.jpeg', 'img/*.gif', 'img/*.png'])
         .pipe(imagemin({
             optimizationLevel: 5,
             progressive: true,
