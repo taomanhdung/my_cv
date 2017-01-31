@@ -16,6 +16,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cache = require('gulp-cache');
 var parallel = require("concurrent-transform");
+var concat = require('gulp-concat');
 
 
 // Set the banner content
@@ -39,29 +40,27 @@ gulp.task('less', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/grayscale.css')
-        .pipe(cleanCSS({ compatibility: 'ie8' }))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-});
+// gulp.task('minify-css', ['less'], function() {
+//     return gulp.src('css/grayscale.css')
+//         .pipe(cleanCSS({ compatibility: 'ie8' }))
+//         .pipe(rename({ suffix: '.min' }))
+//         .pipe(gulp.dest('css'))
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }))
+// });
 
 
 /**
  * Compile files from sass into _includes then we can use Jekyll includes inline css
  */
-// gulp.task('styles', function() {
-//     return gulp.src('css/main.scss')
-//         .pipe(sass({ outputStyle: 'compressed' }))
-//         .pipe(autoprefixer({ browsers: ['last 2 versions', 'Firefox ESR', 'safari 5', 'ie 9', 'opera 12.1'] }))
-//         // .pipe(gulp.dest('assets/css'))
-//         // .pipe(rename({suffix: '.min'}))
-//         .pipe(cleanCSS())
-//         .pipe(gulp.dest('_includes'));
-// });
+gulp.task('styles', function() {
+    return gulp.src('css/main.scss')
+        .pipe(sass({ includePaths: require('node-bourbon').includePaths }))
+        .pipe(concat('styles.css'))
+        .pipe(minify({keepBreaks:true}))
+        .pipe(gulp.dest('_includes'));
+});
 
 
 // Minify JS
@@ -128,7 +127,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'optimize-images', 'optimize-html']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'optimize-images', 'optimize-html', 'styles']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
