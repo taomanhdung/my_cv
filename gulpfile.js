@@ -92,7 +92,7 @@ gulp.task('optimize-images', function () {
         //     svgoPlugins: [{removeViewBox: false}],
         //     use: [pngquant(), jpegtran(), gifsicle()]
         // }))
-        .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+        //.pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
         .pipe(gulp.dest('img/'));
 });
 
