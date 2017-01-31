@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-force-https: false
+force-https: true
 enforce_ssl: taomanhdung.com
 
 lang: "en"
