@@ -14,6 +14,7 @@ var minifyHTML = require('gulp-minify-html');
 var fs = require('fs');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var cache = require('gulp-cache');
 
 
 // Set the banner content
@@ -78,10 +79,13 @@ gulp.task('minify-js', function() {
 gulp.task('optimize-images', function () {
     return gulp.src("img/**") //['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png']
         .pipe(imagemin({
-            progressive: false,
+            optimizationLevel: 5,
+            progressive: true,
+            interlaced: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant(), jpegtran(), gifsicle()]
         }))
+        .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
         .pipe(gulp.dest('img/'));
 });
 
