@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-force-https: true
+force-https: false
 enforce_ssl: taomanhdung.com
 
 lang: "en"
@@ -77,7 +77,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-#- gulpfile.js
+  - Readme
+#  - gulpfile.js
 port: 8888
 
 ##############################
