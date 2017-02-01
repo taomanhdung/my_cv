@@ -77,13 +77,13 @@ gulp.task('minify-js', function() {
 
 
 gulp.task('optimize-images', function () {
-    gulp.src("img/**")
+    gulp.src("img/projects/*.{jpg,png}")
         .pipe(parallel(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest("img"));
+        .pipe(gulp.dest("img/projects/"));
 });
 
 gulp.task('optimize-html', function() {
@@ -135,7 +135,7 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'optimize-im
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
-    gulp.watch('img/**', ['optimize-images']);
+    gulp.watch('img/projects/*.{jpg,png}', ['optimize-images']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     //gulp.watch('_data/**', browserSync.reload);
