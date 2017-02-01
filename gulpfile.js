@@ -17,6 +17,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var cache = require('gulp-cache');
 var parallel = require("concurrent-transform");
 var concat = require('gulp-concat');
+var optipng = require('imagemin-optipng');
 
 
 // Set the banner content
@@ -77,13 +78,13 @@ gulp.task('minify-js', function() {
 
 
 gulp.task('optimize-images', function () {
-    gulp.src("img/**")
+    return gulp.src('img/**')
         .pipe(imagemin({
             progressive: true,
-            svgoPlugins: [{ removeViewBox: false }],
-            use: [pngquant()]
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant(), jpegtran(), optipng(), gifsicle()]
         }))
-        .pipe(gulp.dest("img/"));
+        .pipe(gulp.dest('img/'));
 });
 
 gulp.task('optimize-html', function() {
