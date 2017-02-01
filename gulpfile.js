@@ -78,11 +78,11 @@ gulp.task('minify-js', function() {
 
 gulp.task('optimize-images', function () {
     gulp.src("img/**")
-        .pipe(parallel(imagemin({
+        .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()]
-        })))
+        }))
         .pipe(gulp.dest("img/"));
 });
 
