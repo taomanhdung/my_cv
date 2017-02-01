@@ -79,7 +79,7 @@ gulp.task('minify-js', function() {
 gulp.task('optimize-images', function () {
     return gulp.src(["img/projects/*.jpg", "img/projects/*.png"]) //['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png','img/*.jpg', 'img/*.jpeg', 'img/*.gif', 'img/*.png']
         .pipe(imagemin({
-            optimizationLevel: 5,
+            optimizationLevel: 3,
             progressive: true,
             interlaced: true,
             svgoPlugins: [{removeViewBox: false}],
