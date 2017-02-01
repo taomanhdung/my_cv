@@ -55,10 +55,10 @@ gulp.task('less', function() {
  * Compile files from sass into _includes then we can use Jekyll includes inline css
  */
 gulp.task('styles', function() {
-    return gulp.src('css/main.scss')
+    gulp.src('css/main.scss')
         .pipe(sass({ includePaths: require('node-bourbon').includePaths }))
         .pipe(concat('styles.css'))
-        .pipe(minify({keepBreaks:true}))
+        .pipe(cleanCSS({keepBreaks:true}))
         .pipe(gulp.dest('_includes'));
 });
 
@@ -77,21 +77,13 @@ gulp.task('minify-js', function() {
 
 
 gulp.task('optimize-images', function () {
-    return gulp.src("img/**") //['img/**/*.jpg', 'img/**/*.jpeg', 'img/**/*.gif', 'img/**/*.png','img/*.jpg', 'img/*.jpeg', 'img/*.gif', 'img/*.png']
+    gulp.src("img/**")
         .pipe(parallel(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()]
         })))
-        // .pipe(imagemin({
-        //     optimizationLevel: 5,
-        //     progressive: true,
-        //     interlaced: true,
-        //     svgoPlugins: [{removeViewBox: false}],
-        //     use: [pngquant(), jpegtran(), gifsicle()]
-        // }))
-        //.pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-        .pipe(gulp.dest('img/'));
+        .pipe(gulp.dest("img/"));
 });
 
 gulp.task('optimize-html', function() {

@@ -55,10 +55,10 @@ gulp.task('less', function() {
  * Compile files from sass into _includes then we can use Jekyll includes inline css
  */
 gulp.task('styles', function() {
-    return gulp.src('css/main.scss')
+    gulp.src('css/main.scss')
         .pipe(sass({ includePaths: require('node-bourbon').includePaths }))
         .pipe(concat('styles.css'))
-        .pipe(minify({keepBreaks:true}))
+        .pipe(cleanCSS({keepBreaks:true}))
         .pipe(gulp.dest('_includes'));
 });
 
