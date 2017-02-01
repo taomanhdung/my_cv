@@ -119,7 +119,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'optimize-images', 'optimize-html', 'styles']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'optimize-html', 'styles']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -131,11 +131,11 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'optimize-images'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
-    gulp.watch('img/**', ['optimize-images']);
+    //gulp.watch('img/**', ['optimize-images']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     //gulp.watch('_data/**', browserSync.reload);
